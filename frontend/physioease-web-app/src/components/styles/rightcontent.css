@@ -1,0 +1,213 @@
+body {
+  background-color: lightgray;
+}
+.rightcontent
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    row-gap: 15px;
+    background-color: white;
+    height: 430px;
+    width: 360px;
+    margin-left: 45em;
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 26px;
+    font-family: sans-serif;
+    margin-top: -720px;
+    border-radius: 10px;
+}
+label
+{
+ margin-top: -20px;
+ font-weight:300;
+ font-size: 16px;
+ padding-top: 10px;
+}
+
+.input-box
+{
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 25px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    font-size: 16px;
+    padding-right: 10px;
+    
+}
+.dropdown .input-box
+{
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 25px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.setavailability
+{
+    background-color: black;
+    color: white;
+    width: 120px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 106px;
+    padding-right: 106px;
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-top: -5px;
+}
+.setavailability:hover
+{
+    cursor: pointer;
+}
+.arrowicon
+{
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  right: 10px;
+  top: 43%;
+  right: 10%;
+}
+
+.dropdown
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    position: relative;
+    
+}
+
+.dropdown select
+{
+
+    -webkit-appearance: none; /* Hides the default arrow in Chrome, Safari */
+    -moz-appearance: none; /* Hides the default arrow in Firefox */
+    appearance: none; /* Standard property to hide default arrow */     
+    
+}
+.rightcontentheader
+{
+    font-size: 23px;
+}
+.rightbottomcontent
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    row-gap: 15px;
+    background-color: white;
+    height:260px;
+    width: 360px;
+    margin-left: 78em;
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-top: 26px;
+    border-radius: 10px;
+}
+.appointmentinfo
+{
+    position: relative;
+    font-family:'Roboto';
+    margin-bottom: 20px;
+}
+.patientname
+{
+    
+    font-family:sans-serif;
+    font-size: 16px;
+    font-weight: 550; /* Semi-Bold */
+    color: #333; 
+}
+.appointmenttime
+{
+ position: absolute;
+ left: 75%;
+ top: 80%;
+ font-family:sans-serif;
+ font-size: 16px; 
+ font-weight: 550;
+ color: #333; 
+}
+.appointmentdate
+{
+  position: absolute;
+  top : 110%;
+  font-family:'Roboto';
+  font-size: 16px; 
+  font-weight: 400;
+  color: #777;
+}
+
+.middlecontentnotifications
+{
+    position: relative;
+    height: 250px;
+    background-color: white;
+    width: 1220px;
+    margin-top: 50px;
+    margin-left: 280px;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif; /* Clean and modern font */
+    font-size: 25px; /* Slightly large for emphasis */
+    font-weight: 700; /* Bold for prominence */
+    color: #333; /* Dark gray for clarity */
+}
+.notificationtime
+{
+    width: 100px;
+    position: absolute;
+    font-family:'Roboto';
+    font-size: 15px; 
+    font-weight: 400;
+    color: #777; 
+    top: 0%;    
+    right: -50%;
+    margin-bottom: 30px;
+}
+.notification1  
+{
+    position: absolute;
+    font-family:sans-serif;
+    font-size: 16px; 
+    font-weight: 400;
+    color: #333; 
+    left: 2.2%;
+    width: 800px;
+    
+}
+
+.notification2
+{
+    position: absolute;
+    font-family:sans-serif;
+    font-size: 16px; 
+    font-weight: 400;
+    color: #333; 
+    left: 2.2%;
+    margin-top: 50px;
+    width: 800px;
+}
+
+.notification3
+{
+    position: absolute;
+    font-family:sans-serif;
+    font-size: 16px; 
+    font-weight: 400;
+    color: #333; 
+    left: 2.2%;  
+    margin-top: 100px;
+    width: 800px;
+}

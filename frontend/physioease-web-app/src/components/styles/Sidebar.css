@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  top: 0; 
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  width: 270px;
+  background-color: white;
+  font-family: 'Poppins';
+  font-size: 16px;
+  padding-top: 20px;
+  height: 100vh;
+}
+
+.dashboard, .notification, .patients {
+  margin-left: 30px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.dashboard:hover, .notification:hover, .patients:hover {
+  cursor: pointer;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  transition: all 0.15s ease;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.physiotherapistpatients {
+  margin: 20px 20px 20px 30px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.Patients {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 20px 20px 30px;
+}
+
+.patient {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+  flex: 1;
+  min-width: 100%;
+  margin-left: 5px;
+}
+
+.top {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.dob, .fonts {
+  color: #777;
+  font-size: 14px;
+}
+
+/* Tablet Responsiveness */
+@media (max-width: 1024px) {
+  .sidebar {
+      width: 200px;
+  }
+
+  .physiotherapistpatients {
+      margin-left: 220px;
+  }
+
+  .Patients {
+      margin-left: 220px;
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .sidebar {
+      width: 100%;
+      height: auto;
+      position: static;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 10px;
+  }
+
+  .sidebar a {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0;
+  }
+
+  .sidebar .icon {
+      margin-right: 0;
+      margin-bottom: 5px;
+  }
+
+  .physiotherapistpatients {
+      margin: 20px;
+  }
+
+  .Patients {
+      margin: 0 20px;
+      justify-content: center;
+  }
+
+  .patient {
+      flex-basis: 100%;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  .sidebar {
+      flex-wrap: wrap;
+  }
+
+  .sidebar a {
+      flex-basis: 33.33%;
+      text-align: center;
+  }
+}

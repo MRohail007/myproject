@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container-chat {
+  background-color: palegoldenrod;
+  max-width: 1200px;
+  width: 1500px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.chat-page {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-list select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+}
+
+.chat-box {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.pinned-banner {
+  background-color: #f9f9f9;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #007bff;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.pinned-banner:hover {
+  background-color: #e9ecef;
+  color: #0056b3;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.message {
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+  max-width: 30%;
+  width: fit-content;
+  display: block;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  position: relative;
+  padding-right: 25px;
+}
+
+.message.sent {
+  background-color: #007bff;
+  color: white;
+  margin-left: auto;
+  text-align: right;
+}
+
+.message.received {
+  background-color: #f1f1f1;
+  margin-right: auto;
+}
+
+.message.pinned {
+  border: 2px solid #ff4500; /* Highlight pinned message */
+  background-color:gray ; /* Light yellow background */
+}
+
+.message small {
+  font-size: 0.8em;
+  color: #666;
+  display: block;
+}
+
+.chat-input {
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 8px;
+}
+
+.chat-input button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background-color: #0056b3;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 16px;
+  color: #555;
+}
+
+.message img {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.message a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.message a:hover {
+  color: #0056b3;
+}
+
+.chat-input button.attach-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 0;
+  margin: 0 10px;
+  color: #007bff;
+}
+
+.chat-input button.attach-btn:hover {
+  color: #0056b3;
+}
+.pin-button {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    color: #009579;
+    padding: 0;
+    outline: none; /* Remove default focus ring */
+  }
+  
+  .pin-button:hover {
+    color: #0056b3;
+  }
+  
+  .pin-button:focus {
+    outline: none; /* Ensure no ring on focus */
+  }
+  
+  .pin-button.pinned {
+    color: #ff4500;
+  }
+  
+  .pin-button.pinned:hover {
+    color: #cc3700;
+  }

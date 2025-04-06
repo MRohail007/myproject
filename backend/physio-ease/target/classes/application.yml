@@ -1,0 +1,44 @@
+spring:
+  profiles:
+    active: ${ACTIVE_PROFILE:dev}
+  # Optional: Jackson configuration if needed
+  jackson:
+    default-property-inclusion: non_null
+    serialization:
+      fail-on-empty-beans: false # We don't want it to fail on empty beans
+      close-closeable: true
+      flush-after-write-value: true
+      write-date-keys-as-timestamps: true
+    deserialization:
+      fail-on-unknown-properties: false # We don't want it to fail on unknown properties
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/physio_ease
+    username: postgres
+    password: burhan4800
+
+  jpa:
+    open-in-view: false
+    database-platform: org.hibernate.dialect.PostgreSQLInnoDBDialect
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        globally_quoted_identifiers: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+  servlet:
+    multipart:
+      enabled: true # Enable multipart file uploads
+      max-file-size: 10MB # Maximum file size for a single file
+      max-request-size: 10MB # Maximum request size (total size of all files)
+      file-size-threshold: 2KB # Size threshold after which files will be written to disk
+
+server:
+  port: ${CONTAINER_PORT:8080}
+  error:
+    path: /user/error
+    whitelabel:
+      enabled: false

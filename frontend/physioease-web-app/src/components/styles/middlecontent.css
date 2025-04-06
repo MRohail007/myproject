@@ -1,0 +1,44 @@
+
+.middlecontent
+{
+    height: 30px;
+    background-color: white;
+    width: 800px;
+    height: 720px;
+    margin-top: 50px;
+    margin-left: 280px;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 25px; 
+    font-weight: 700; 
+    color: #333; 
+}
+.schedule, .recentnotifications
+{
+    padding-left: 25px;
+    padding-top: 20px;
+}
+.calenderrender
+{
+    width:730px;
+    height: 300px;
+    margin-left: 25px;
+    border-color: black;
+    border: 1px solid #ddd; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    background-color: #fff; 
+    padding: 10px; 
+}
+.physiotherapistdashboard, .physiotherapistnotifications, .physiotherapistpatients
+{
+    color: black;
+    width: 500px;
+    height: 20px;
+    margin-left: 280px;
+    font-size: 30px; 
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 60px;
+}

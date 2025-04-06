@@ -1,0 +1,49 @@
+body
+{
+    background-color: #ffff;
+}
+.sidebar
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    top: 0; 
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 270px;
+    background-color: white;
+    font-family: 'Poppins';
+    font-size: 16px;
+    padding-top: 20px;
+    height: 100vh;
+}   
+.dashboard, .notification, .patients
+{
+    margin-left: 30px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    padding:10px 10px 10px 10px;
+}
+
+.icon
+{
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+.dashboard:hover,.notification:hover,.patients:hover
+{
+    cursor: pointer;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    transition: all 0.15s ease;
+}
+a {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Inherits the color from its parent */
+    display: block; /* Ensures it behaves like a block for proper alignment */
+}
+
